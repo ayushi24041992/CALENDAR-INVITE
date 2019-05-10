@@ -1,0 +1,9 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/knoldus/SendInviteUsingGoogleApi/target/scala-2.12/sendinviteusinggoogleapi_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	client_secret_753068631377-srj76hhdc3jc6ismv9jch8gnkricq26d.apps.googleusercontent.com.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/knoldus/SendInviteUsingGoogleApi/target/scala-2.12/classes/client_secret_753068631377-srj76hhdc3jc6ismv9jch8gnkricq26d.apps.googleusercontent.com.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	credentials.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/knoldus/SendInviteUsingGoogleApi/target/scala-2.12/classes/credentials.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CalendarInvite.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/knoldus/SendInviteUsingGoogleApi/target/scala-2.12/classes/CalendarInvite.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
