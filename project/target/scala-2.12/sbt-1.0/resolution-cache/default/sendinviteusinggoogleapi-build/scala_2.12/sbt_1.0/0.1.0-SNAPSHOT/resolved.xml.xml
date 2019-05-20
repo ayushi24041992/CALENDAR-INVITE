@@ -4,7 +4,7 @@
 		module="sendinviteusinggoogleapi-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190510144345"
+		publication="20190517105426"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

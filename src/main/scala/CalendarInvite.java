@@ -31,7 +31,7 @@ public class CalendarInvite {
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
-    private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR_EVENTS);
+    private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR);
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
     /**
@@ -75,8 +75,7 @@ public class CalendarInvite {
         Event event = new Event()
                 .setSummary("Google I/O 2015")
                 .setLocation("800 Howard St., San Francisco, CA 94103")
-                .setDescription("A chance to hear more about Google's developer products.")
-                .setOrganizer(new Event.Organizer().setEmail("sakshi.hasija24@gmail.com"));
+                .setDescription("A chance to hear more about Google's developer products.");
 
         DateTime startDateTime = new DateTime("2019-05-09T18:30:00-07:00");
         EventDateTime start = new EventDateTime()
@@ -94,8 +93,7 @@ public class CalendarInvite {
         event.setRecurrence(Arrays.asList(recurrence));
 
         EventAttendee[] attendees = new EventAttendee[] {
-                new EventAttendee().setEmail("ayushi.hasija@knoldus.in"),
-                new EventAttendee().setEmail("sakshi.gupta@knoldus.in"),
+                new EventAttendee().setEmail("example@gmail.com")
         };
         event.setAttendees(Arrays.asList(attendees));
 
@@ -111,5 +109,13 @@ public class CalendarInvite {
         String calendarId = "primary";
         event = service.events().insert(calendarId, event).setSendNotifications(true).execute();
         System.out.printf("Event created: %s\n", event.getHtmlLink());
+
+        Event updatedEvent =
+                service.events().move("primary", event.getId(), "abc@gmail.com").execute();
+
+        System.out.println(updatedEvent.getUpdated());
+
+
+
     }
 }
